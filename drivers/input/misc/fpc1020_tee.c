@@ -332,7 +332,7 @@ static ssize_t report_home_set(struct device *dev,
 	{
         if(virtual_key_enable){
                 key_home_pressed = true;
-        }else{
+        }else if (!s1302_is_keypad_stopped()) {
             input_report_key(fpc1020->input_dev,
                             KEY_HOME, 1);
             input_sync(fpc1020->input_dev);
