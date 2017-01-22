@@ -408,6 +408,13 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -Wno-format-security \
 		   -std=gnu89
 
+# Thanks gcc!
+KBUILD_CFLAGS   += -Wno-trigraphs -Wno-unused-label -Wno-array-bounds -Wno-memset-transposed-args \
+				   -Wno-unused-function -Wno-declaration-after-statement \
+				   -Wno-unused-variable -Wno-parentheses -Wno-maybe-uninitialized \
+				   -Wno-misleading-indentation -Wno-bool-compare -Wno-int-conversion \
+				   -Wno-discarded-qualifiers -Wno-logical-not-parentheses -Wno-tautological-compare -Wno-incompatible-pointer-types
+
 KBUILD_AFLAGS_KERNEL :=
 KBUILD_CFLAGS_KERNEL :=
 KBUILD_AFLAGS   := -D__ASSEMBLY__
