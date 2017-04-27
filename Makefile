@@ -414,7 +414,8 @@ KBUILD_CFLAGS   += -Wno-trigraphs -Wno-unused-label -Wno-array-bounds -Wno-memse
 				   -Wno-unused-function -Wno-declaration-after-statement \
 				   -Wno-unused-variable -Wno-parentheses -Wno-maybe-uninitialized \
 				   -Wno-misleading-indentation -Wno-bool-compare -Wno-int-conversion \
-				   -Wno-discarded-qualifiers -Wno-logical-not-parentheses -Wno-tautological-compare -Wno-incompatible-pointer-types
+				   -Wno-discarded-qualifiers -Wno-logical-not-parentheses -Wno-tautological-compare -Wno-incompatible-pointer-types \
+                   -Wno-discarded-array-qualifiers
 
 KBUILD_AFLAGS_KERNEL :=
 KBUILD_CFLAGS_KERNEL :=
